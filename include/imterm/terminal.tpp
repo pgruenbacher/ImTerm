@@ -855,7 +855,7 @@ void terminal<TerminalHelper>::show_autocomplete() noexcept {
 
 		ImGui::SetNextWindowBgAlpha(0.9f);
 		ImGui::PushStyleVar(ImGuiStyleVar_WindowRounding, 0.0f);
-		ImGui::SetNextWindowFocus();
+		//ImGui::SetNextWindowFocus(); // Commented out: This was causing the input field to +lose focus when typing spaces
 
 		ImVec2 auto_complete_pos = ImGui::GetItemRectMin();
 
